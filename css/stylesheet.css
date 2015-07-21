@@ -1,0 +1,335 @@
+/* reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background: #232128;
+	margin: 0px;
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div {
+	cursor: context-menu;
+}
+
+.header {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background: #272A2D;
+  z-index: 1000;
+  color: #fff;
+  border-bottom: 2px #1D1D1D solid;
+}
+
+.header li {
+	float: right;
+	margin-right: 50px;
+}
+
+.header ul {
+	margin: 0px 15px 0px 15px;
+	padding: 15px 0px 10px 10px;
+}
+
+.header a {
+	color: white;
+}
+
+.header .logo {
+	float: left;
+}
+
+.container {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.footer {
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	background: #272A2D;
+	bottom: 0;
+	padding: 5px 0px 5px 0px;
+	color: #fff;
+}
+
+.footer li {
+	float: left;
+	margin-right: 55px;
+	font-size: 15px;
+}
+
+.footer ul {
+	padding: 10px 0px 10px 10px;
+}
+
+.footer a {
+	color: #fff;
+}
+
+
+
+/* ==============================================================================
+
+========================================================================== */
+
+.leftMain {
+  /* margin: 105px 30px 30px 280px; /* actual */
+  position: absolute;
+  margin: 75px 30px 0px 280px;
+}
+
+.rightMain {
+  margin: 75px 0px 0px 700px;
+  position: absolute;
+}
+
+.profile {
+  position: relative;
+  background: #3d464d;
+  height: 175px;
+  width: 390px;
+  /* margin: 105px 30px 30px 280px; /* actual */
+  margin-bottom: 30px;
+	border: 1px solid #333333;
+}
+
+.medals {
+  position: relative;
+  /* overflow: hidden; */
+  margin: 25px 0px 0px 65px;
+}
+
+.medals img {
+  padding-left: 3px;
+  height: 30px;
+	transition: all .2s ease-in-out;
+}
+
+.medals img:hover {
+	transform: scale(1.2);
+}
+
+.rankXP {
+
+}
+
+.rankXPImage {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 9px;
+}
+
+.rankXPCurrent {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 5px 10px 74px;
+  color: #8b99a6;
+  float: left;
+}
+
+.rankXPNext {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 30px 0px 0px;
+  color: #8b99a6;
+  float: right;
+}
+
+progress {
+  -webkit-appearance: none;
+  position: absolute;
+  width: 285px;
+  height: 9px;
+  border: 1px #8fb0cf solid;
+  right: 0;
+  bottom: 0;
+  margin: 0px 30px 8px 0px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #212830;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, #4578a3, #8fb0cf);
+}
+
+.profilePic {
+  height: 55px;
+  width: 55px;
+  float: left;
+  border: 1px grey solid;
+}
+
+.profilePicSmall {
+  height: 45px;
+  width: 45px;
+  float: left;
+  border: 1px grey solid;
+	margin: 5px;
+}
+
+.profileTop {
+  position: absolute;
+  margin: 10px 15px;
+  width: 100%;
+  height: 100px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 10px;
+  float: left;
+}
+
+.rankComp {
+  position: absolute;
+  background: #292e34;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  border-top: 1px #27272D solid;
+}
+
+.rankCompImage {
+  height: 35px;
+  padding: 13px 10px 0px 17px;
+  float: left;
+}
+
+.rankCompText {
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 20px;
+  color: #8b99a6;
+  float: left;
+}
+
+.wins {
+  float: right;
+  height: 40px;
+  width: 70px;
+  margin: 10px 0px 0px 0px;
+}
+
+.rankTrophy {
+  padding-top: 9px;
+}
+
+.winNumber {
+  font-size: 15px;
+  color: #8b99a6;
+  margin: 9px 0px 0px 5px;
+  position: absolute;
+}
+
+.main {
+  background: #3d464d;
+  width: 935px;
+  height: 780px;
+	border: 1px solid #333333;
+}
+
+.friendsMain {
+  position: relative;
+  background: #3d464d;
+  height: 575px;
+  width: 390px;
+	border: 1px solid #333333;
+}
+
+.friendsTop {
+	background: #2f3942;
+	top: 0;
+	height: 30px;
+}
+
+.friendsMain span {
+  position: absolute;
+  padding: 3px 0px 0px 10px;
+  color: #8b99a6;
+}
+
+.friendOffline {
+  background: #50565A;
+  width: auto;
+  height: 58px;
+  margin: 5px;
+}
+
+.friendOnline {
+  background: #4E644D;
+  width: auto;
+  height: 58px;
+  margin: 5px;
+}
+
+.friendOffline:hover {
+	background: #636769;
+}
+
+.friendOnline:hover {
+	background: #617360;
+}
+
+.friendNameOffline {
+  text-decoration: none;
+  color: grey;
+  padding: 2px 0px 0px 5px;
+  float: left;
+}
+
+.friendNameOnline {
+  text-decoration: none;
+  color: #90ba3c;
+  padding: 2px 0px 0px 5px;
+  float: left;
+}
